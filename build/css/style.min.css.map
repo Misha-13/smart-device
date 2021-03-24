@@ -1,1 +1,1 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,E,CACE,S","file":"style.min.css","sourcesContent":["h1 {\n  color: red;\n}\n"]}
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,U,CACE,oB,CACA,6C,CACA,2B,CACA,qB","file":"style.min.css","sourcesContent":[".page-body {\n  background-color: red;\n  background-image: url(\"../img/bg-header@1x.png\");\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n"]}
