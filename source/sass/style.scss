@@ -1,6 +1,10 @@
-.page-body {
-  background-color: red;
-  background-image: url("../img/bg-header@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixin.scss";
+@import "global.scss";
+@import "blocks/page.scss";
+@import "blocks/logo.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+

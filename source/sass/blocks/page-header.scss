@@ -1,0 +1,21 @@
+.page-header {
+  padding-top: 102px;
+  background-color: $layout-light-black;
+  background-image: url("../img/bg-header@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url("../img/bg-header@2x.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.page-header__wrapper {
+  width: 73.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
