@@ -2,20 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 202px;
+  min-width: 202px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 5px;
+  }
 
   @media (max-width: $mobile-width-only) {
-    width: 38px;
+    min-width: 38px;
   }
 
   & img {
     width: 52px;
     height: 52px;
-
-    /* @media (max-width: $tablet-width) {
-      width: 10px;
-      height: 10px;
-    } */
 
     @media (max-width: $mobile-width-only) {
       width: 38px;

@@ -1,0 +1,24 @@
+.common-button {
+  cursor: pointer;
+  border: 1px solid $layout-white;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: $extra-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $layout-white;
+
+  &:hover,
+  &:focus {
+    border-color: $layout-blue;
+    color: $layout-blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

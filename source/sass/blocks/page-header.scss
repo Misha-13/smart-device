@@ -1,5 +1,7 @@
 .page-header {
-  padding-top: 102px;
+  display: flex;
+  justify-content: center;
+  padding-top: 33px;
   background-color: $layout-light-black;
   background-image: url("../img/bg-header@1x.png");
   background-repeat: no-repeat;
@@ -15,7 +17,13 @@
 }
 
 .page-header__wrapper {
-  width: 73.5%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1411px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
