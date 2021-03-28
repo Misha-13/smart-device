@@ -1,8 +1,8 @@
 .promo {
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 
   & h1 {
     font-family: $extra-font;
@@ -12,6 +12,7 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: $layout-white;
+    margin: 0;
     margin-bottom: 31px;
   }
 
@@ -37,11 +38,40 @@
       background-color: $layout-white;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    & h1 {
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    & p {
+      /* width: 356px; */
+      width: auto;
+      font-size: 18px;
+      line-height: 28px;
+      padding-left: 48px;
+      margin-bottom: 57px;
+      /* align-self: flex-end; */
+
+      &::before {
+        width: 33px;
+      }
+    }
+  }
 }
 
 .promo__info-wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    /* box-sizing: border-box; */
+    /* max-width: 470px; */
+    flex-basis: 440px;
+    align-items: center;
+    /* padding-left: 63px; */
+  }
 }
 
 .promo__button {
@@ -54,6 +84,18 @@
   border-color: $layout-blue;
   margin-bottom: 93px;
   margin-left: 93px;
+
+  @media (max-width: $tablet-width) {
+    /* width: 379px;
+    max-width: 379px; */
+    width: auto;
+    /* margin-bottom: 0; */
+    margin: 0;
+    /* margin-left: 48px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    align-self: flex-end;
+  }
 
   &:hover,
   &:focus {
@@ -80,6 +122,10 @@
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
 
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -93,11 +139,41 @@
 .promo__img-wrapper {
   width: 705px;
   height: 515px;
-  /* overflow: hidden; */
+  position: absolute;
+  left: 790px;
+  top: -60px;
+  background-image: url("../img/dotted-triangle@1x.png");
+  background-repeat: no-repeat;
+  background-position: -15px -140px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url("../img/dotted-triangle@2x.png");
+    background-repeat: no-repeat;
+    background-size: 671px 641px;
+    background-position: -15px -140px;
+  }
 
   & img {
     max-width: 705px;
     height: 515px;
     object-fit: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 465px;
+    height: 340px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    left: 435px;
+    top: -110px;
+
+    & img {
+      max-width: 465px;
+      height: 340px;
+    }
+
+    background-size: 529px 505px;
+    background-position: -15px -120px;
   }
 }

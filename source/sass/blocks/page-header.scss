@@ -8,6 +8,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 163px;
+  }
 
   @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
     background-image: url("../img/bg-header@2x.png");
@@ -23,7 +28,7 @@
   margin-left: 5px;
 
   @media (max-width: $tablet-width) {
-    width: auto;
+    width: 100%;
     margin-left: 25px;
     margin-right: 25px;
   }

@@ -3,4 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 231px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 116px;
+  }
 }
