@@ -28,6 +28,8 @@
   margin-left: 5px;
 
   @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-left: 25px;
     margin-right: 25px;
