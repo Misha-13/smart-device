@@ -12,6 +12,7 @@ $layout-light-grey: #788891;
 $layout-lighter-grey: #cdcdcd;
 
 //My colors
+$custom-grey: #ebebeb;
 
 //Fonts
 $default-font: "PT Mono", "Arial", sans-serif;
@@ -20,5 +21,6 @@ $special-font: "Roboto", "Arial", sans-serif;
 
 // Viewports
 $mobile-width-only: 320px;
+$tablet-width-exception: 400px;
 $tablet-width: 768px;
 $desktop-width: 1024px;

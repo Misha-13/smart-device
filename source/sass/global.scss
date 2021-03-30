@@ -4,6 +4,12 @@ img {
   height: auto;
 }
 
+polyline,
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

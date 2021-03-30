@@ -8,4 +8,8 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 116px;
   }
+
+  @media (max-width: $tablet-width-exception) {
+    margin-bottom: 231px;
+  }
 }

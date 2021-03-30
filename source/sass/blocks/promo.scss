@@ -40,30 +40,36 @@
   }
 
   @media (max-width: $tablet-width) {
-    /* justify-content: center; */
-    /* flex-direction: column;
-    width: auto;
-    flex-basis: 580px; */
     align-self: center;
 
     & h1 {
       font-size: 60px;
       line-height: 70px;
-      /* width: 320px; */
     }
 
     & p {
-      /* width: 356px; */
       width: auto;
       font-size: 18px;
       line-height: 28px;
       padding-left: 48px;
       margin-bottom: 57px;
-      /* align-self: flex-end; */
 
       &::before {
         width: 33px;
       }
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    & h1 {
+      font-size: 40px;
+      line-height: 47px;
+    }
+
+    & p {
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 42px;
     }
   }
 }
@@ -73,15 +79,13 @@
   flex-direction: column;
 
   @media (max-width: $tablet-width) {
-    /* box-sizing: border-box; */
-    /* max-width: 470px; */
-    /* justify-self: center; */
-    /* flex-basis: 440px; */
-    /* flex-basis: 580px;
-    align-self: flex-start; */
-    /* align-items: center; */
-    /* padding-left: 63px; */
-    /* margin-left: 63px; */
+    margin-left: 63px;
+    flex-basis: 430px;
+  }
+
+  @media (max-width: $tablet-width-exception) {
+    margin: 0;
+    z-index: 1;
   }
 }
 
@@ -97,17 +101,13 @@
   margin-left: 93px;
 
   @media (max-width: $tablet-width) {
-    /* width: 379px;
-    max-width: 379px; */
     width: auto;
-    /* margin-bottom: 0; */
     margin: 0;
-    /* margin-left: 48px; */
-    /* padding-left: 30px;
-    padding-right: 30px; */
-    /* flex-grow: 0; */
-    /* align-self: flex-end; */
-    /* margin-right: 125px; */
+    margin-left: 48px;
+  }
+
+  @media (max-width: $tablet-width-exception) {
+    margin: 0;
   }
 
   &:hover,
@@ -188,5 +188,42 @@
 
     background-size: 529px 505px;
     background-position: -15px -120px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 301px;
+    height: 220px;
+    /* padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px; */
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 140px;
+    left: 10px;
+    top: -220px;
+
+    & img {
+      max-width: 301px;
+      height: 220px;
+    }
+
+    background-size: 505px 483px;
+    background-position: 125px -110px;
+  }
+}
+
+.promo__text-element {
+  display: block;
+
+  @media (max-width: $tablet-width-exception) {
+    display: none;
+  }
+}
+
+.promo__text-element--mobile {
+  display: none;
+
+  @media (max-width: $tablet-width-exception) {
+    display: block;
   }
 }
