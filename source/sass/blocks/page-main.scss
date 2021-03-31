@@ -4,6 +4,21 @@
   align-items: center;
   background-image: url("../img/bg-main@1x.png");
   background-repeat: no-repeat;
+  background-size: 2243px 1347px;
   background-position: -300px -20px;
   padding-top: 109px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url("../img/bg-main@2x.png");
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 54px;
+    background-position: -645px -50px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 37px;
+    background-position: -975px 465px;
+  }
 }

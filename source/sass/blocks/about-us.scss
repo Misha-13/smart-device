@@ -1,0 +1,148 @@
+.about-us {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1170px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 100px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 75px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+  }
+}
+
+.about-us__info-wrapper {
+  margin-left: -10px;
+  padding-right: 10px;
+  padding-bottom: 13px;
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: $extra-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $layout-grey;
+  }
+
+  & p {
+    font-family: $default-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $layout-grey;
+    margin: 0;
+    margin-bottom: 20px;
+
+    /* &:last-of-type {
+      margin-bottom: 40px;
+    } */
+  }
+
+  @media (max-width: $tablet-width) {
+    /* align-self: flex-start; */
+    margin-left: -33px;
+    /* margin-bottom: 30px; */
+    padding-right: 0;
+    padding-bottom: 0;
+
+    & h2 {
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+
+  @media (max-width: $tablet-width-exception) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    & h2 {
+      font-size: 28px;
+      line-height: 39px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about-us__flex-wrapper {
+  margin-bottom: 40px;
+
+  & p {
+    display: block;
+    margin-bottom: 0;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 34px;
+
+    & p {
+      display: none;
+
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+}
+
+.about-us__button {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 14px;
+  width: 180px;
+  border-color: $layout-blue;
+  color: $layout-blue;
+}
+
+.about-us__img-wrapper {
+  display: flex;
+  align-items: flex-end;
+  min-width: 220px;
+  min-height: 317px;
+  margin-left: -30px;
+
+  & picture {
+    width: 220px;
+    height: 317px;
+  }
+
+  & img {
+    width: 220px;
+    height: 317px;
+  }
+
+  @media (max-width: $tablet-width) {
+    align-items: flex-start;
+    min-width: 251px;
+    min-height: 362px;
+
+    & picture {
+      min-width: 251px;
+      min-height: 362px;
+    }
+
+    & img {
+      min-width: 251px;
+      min-height: 362px;
+    }
+  }
+
+  @media (max-width: $tablet-width-exception) {
+    display: none;
+  }
+}
