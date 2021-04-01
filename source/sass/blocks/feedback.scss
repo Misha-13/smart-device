@@ -1,0 +1,18 @@
+.feedback {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $layout-blue;
+  padding-top: 96px;
+  padding-bottom: 113px;
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: $extra-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $layout-white;
+  }
+}
