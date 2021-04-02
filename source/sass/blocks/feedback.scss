@@ -5,6 +5,14 @@
   background-color: $layout-blue;
   padding-top: 96px;
   padding-bottom: 113px;
+  background-image: url("../img/feedback-bg@1x.png");
+  background-repeat: no-repeat;
+  background-position: 1556px 35px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url("../img/feedback-bg@2x.png");
+    background-size: 510px 669px;
+  }
 
   & h2 {
     margin: 0;
@@ -14,5 +22,70 @@
     font-size: 36px;
     line-height: 51px;
     color: $layout-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+    padding-top: 83px;
+    padding-bottom: 103px;
+
+    & h2 {
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 33px;
+    padding-bottom: 41px;
+
+    & h2 {
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
+}
+
+.feedback__wrapper {
+  display: flex;
+  flex-basis: 1170px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feedback__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  flex-basis: 570px;
+  justify-self: flex-start;
+
+  @media (max-width: $tablet-width) {
+    max-width: 590px;
+    flex-basis: 590px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.feedback__img-wrapper {
+  padding-top: 75px;
+  padding-bottom: 134px;
+  padding-left: 144px;
+  margin-right: 114px;
+  /* margin-left: -144px; */
+  margin-left: -175px;
+  background-image: url("../img/dotted-triangle@1x.png");
+  background-repeat: no-repeat;
+  background-position: -15px -140px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url("../img/dotted-triangle@2x.png");
+    background-size: 671px 641px;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
