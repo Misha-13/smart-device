@@ -46,3 +46,21 @@
     color: $layout-light-grey;
   }
 }
+
+.logo--footer {
+  min-width: 216px;
+}
+
+.logo__text-wrapper--footer {
+  & p {
+    color: $layout-lighter-black;
+  }
+
+  & p:last-of-type {
+    color: $layout-light-grey;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
