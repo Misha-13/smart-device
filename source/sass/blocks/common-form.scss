@@ -172,3 +172,37 @@
     }
   }
 }
+
+
+.common-form--modal {
+  & .common-form__fieldset {
+    flex-direction: column;
+
+    & input {
+      width: 100%;
+    }
+  }
+
+  & p {
+    width: 380px;
+  }
+
+  & .common-form__button {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  & .common-form__wrapper--checkbox {
+    width: 100%;
+  }
+
+  & .common-form__custom-box {
+    box-sizing: content-box;
+    width: 330px;
+    padding-left: 60px;
+  }
+
+  & .common-form__sender {
+    flex-direction: column-reverse;
+  }
+}

@@ -88,7 +88,7 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <section class="common-info">
+      <div class="common-info">
         <a class="logo">
           <img src="img/logo.svg" alt="Логотип Smart Device" width="52" height="52">
           <div class="logo__text-wrapper">
@@ -115,7 +115,7 @@
             <p>Заказать звонок</p>
           </a>
         </div>
-      </section>
+      </div>
       <section class="promo">
         <div class="promo__info-wrapper">
           <h1>Печатные платы</h1>
@@ -261,6 +261,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <section class="socials">
+        <h2 class="visually-hidden">Социальные сети</h2>
         <a class="logo logo--footer">
           <img src="img/logo.svg" alt="Логотип Smart Device" width="52" height="52">
           <div class="logo__text-wrapper logo__text-wrapper--footer">
@@ -328,6 +329,7 @@
       </div>
     </div>
     <section class="legal-info">
+      <h2 class="visually-hidden">Правовая информация</h2>
       <div class="legal-info__main-wrapper">
         <div class="legal-info__wrapper legal-info__wrapper--additional">
           <p>Все права защищены</p>
@@ -340,33 +342,36 @@
       </div>
     </section>
   </footer>
-  <section class="modal" style="display: none;">
-    <h2>Закажите звонок</h2>
-        <form class="common-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <fieldset class="common-form__fieldset">
-            <div class="common-form__wrapper">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input id="name" name="name" type="text" placeholder="Имя" required="">
-            </div>
-            <div class="common-form__wrapper">
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input id="phone" name="phone" type="tel" placeholder="Телефона" pattern="[0-9]{11}|[+]{1}[0-9]{11}" required="">
-            </div>
-            <div class="common-form__wrapper">
-              <label class="visually-hidden" for="question">Ваш вопрос</label>
-              <textarea name="question" id="question" cols="30" rows="10" placeholder="Ваш Вопрос" required=""></textarea>
-            </div>
-          </fieldset>
-          <div>
-            <div class="common-form__wrapper">
-              <label class="" for="name">Я согласен на обработку  персональных данных</label>
-              <input id="name" name="name" type="checkbox" required="">
-            </div>
-            <button class="common-form__button common-button" type="submit">Задать вопрос</button>
+  <section class="modal modal--close">
+    <div class="modal__wrapper">
+      <h2>Закажите звонок</h2>
+      <form class="common-form common-form--modal" action="https://echo.htmlacademy.ru" method="POST">
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <fieldset class="common-form__fieldset">
+          <div class="common-form__wrapper">
+            <label class="visually-hidden" for="name-modal">Имя</label>
+            <input id="name-modal" name="name-modal" type="text" placeholder="Имя">
           </div>
-        </form>
-    <button type="button" class="modal-close" name="close-map" aria-label="Закрыть">X</button>
+          <div class="common-form__wrapper">
+            <label class="visually-hidden" for="phone-modal">Телефон</label>
+            <input id="phone-modal" name="phone-modal" type="tel" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}">
+          </div>
+          <div class="common-form__wrapper common-form__wrapper--textarea">
+            <label class="visually-hidden" for="question-modal">Ваш вопрос</label>
+            <textarea name="question-modal" id="question-modal" rows="7" placeholder="Ваш Вопрос"></textarea>
+          </div>
+        </fieldset>
+        <div class="common-form__sender">
+          <div class="common-form__wrapper common-form__wrapper--checkbox">
+            <input id="law-modal" name="law-modal" type="checkbox" checked="">
+            <label class="common-form__custom-box" for="law-modal">Я согласен на обработку  персональных данных</label>
+          </div>
+          <button class="common-button common-form__button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button type="button" class="modal__close-button" name="close-modal" aria-label="Закрыть"></button>
+    </div>
   </section>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -55,6 +55,7 @@
 
 .footer-block__button {
   display: none;
+  cursor: pointer;
 
   @media (max-width: $mobile-width-only) {
     display: block;
@@ -75,17 +76,51 @@
       top: 7px;
       background-color: $dark-custom-grey;
     }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-color: $layout-blue;
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.footer-block__button--show {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    left: 8px;
+    top: 0;
+    background-color: $dark-custom-grey;
   }
 
-  .footer-block__button--show {
+  &:hover,
+  &:focus {
     &::after {
-      content: "";
-      position: absolute;
-      width: 1px;
-      height: 16px;
-      left: 8px;
-      top: 0;
-      background-color: $dark-custom-grey;
+      background-color: $layout-blue;
     }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.5;
+    }
+  }
+}
+
+.footer-block--hidde {
+  padding-bottom: 0;
+
+  *:nth-child(n+3) {
+    display: none;
   }
 }
