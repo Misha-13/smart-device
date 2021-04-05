@@ -3,12 +3,12 @@
   justify-content: center;
   width: 100%;
   background-color: $layout-light-black;
-  padding-top: 93px;
+  padding-top: 87px;
   padding-bottom: 127px;
 
   & h2 {
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 52px;
     font-family: $extra-font;
     font-weight: 400;
     font-size: 36px;
@@ -17,16 +17,27 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 48px;
     padding-bottom: 78px;
+
+    & h2 {
+      font-size: 32px;
+      line-height: 45px;
+      max-width: 613px;
+      margin-bottom: 50px;
+    }
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 64px;
+    padding-bottom: 66px;
+    padding-top: 50px;
 
     & h2 {
+      max-width: none;
       font-size: 28px;
       line-height: 39px;
+      padding-left: 7px;
+      margin-bottom: 42px;
     }
   }
 }

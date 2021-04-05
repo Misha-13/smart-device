@@ -12,6 +12,12 @@
     color: $layout-white;
   }
 
+  @media (max-width: $tablet-width) {
+    & p {
+      margin-bottom: 53px;
+    }
+  }
+
   @media (max-width: $mobile-width-only) {
     & p {
       margin-bottom: 25px;
@@ -63,6 +69,7 @@
     padding-bottom: 18px;
     padding-right: 16px;
     padding-left: 16px;
+    color: $layout-white;
 
     &::placeholder {
       font-family: $default-font;
@@ -78,11 +85,25 @@
   }
 
   & .common-form__wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 42px;
+    }
 
     @media (max-width: $mobile-width-only) {
       margin-bottom: 30px;
+
+      & textarea {
+        height: 7em;
+      }
     }
+  }
+
+  & .common-form__wrapper--textarea {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 22px;
+  }
   }
 }
 

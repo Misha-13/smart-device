@@ -11,9 +11,9 @@
     align-items: center;
     flex-wrap: wrap;
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 5px;
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 38px;
     justify-self: stretch;
     border-bottom: 1px solid rgba($layout-darker-grey, 0.2);
     gap: 10px;
@@ -21,7 +21,7 @@
 
   @media (max-width: $mobile-width-only) {
     justify-content: center;
-    padding-bottom: 55px;
+    padding-bottom: 45px;
     margin-bottom: 0;
     gap: 25px;
   }
@@ -71,5 +71,9 @@
 
   @media (max-width: $tablet-width) {
     display: block;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 7px;
   }
 }

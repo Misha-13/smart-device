@@ -3,7 +3,7 @@
   max-width: 1170px;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 110px;
+  margin-bottom: 105px;
 
   @media (max-width: $tablet-width) {
     margin-left: 25px;
@@ -14,5 +14,6 @@
   @media (max-width: $mobile-width-only) {
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 63px;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding-top: 33px;
-  padding-bottom: 92px;
+  padding-bottom: 88px;
   background-color: $layout-light-black;
   background-image: url("../img/bg-header@1x.png");
   background-repeat: no-repeat;
@@ -11,12 +11,12 @@
   overflow: hidden;
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 163px;
+    padding-bottom: 159px;
     padding-top: 20px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 70px;
+    padding-bottom: 69px;
     padding-top: 16px;
   }
 

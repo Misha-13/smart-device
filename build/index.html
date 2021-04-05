@@ -146,7 +146,7 @@
           <h3>Оперативные сроки </h3>
           <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
-        <li class="advantages-list__element">
+        <li class="advantages-list__element advantages-list__element--exept">
           <svg class="advantages-list__svg" width="35" height="35">
             <use xlink:href="#icon-hired"></use>
           </svg>
@@ -233,7 +233,7 @@
               </div>
               <div class="common-form__wrapper">
                 <label class="visually-hidden" for="phone">Телефон</label>
-                <input id="phone" name="phone" type="tel" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required="">
+                <input id="phone" name="phone" type="tel" placeholder="Телефон" pattern="\+7\(\d{3}\)\d{7}" required="">
               </div>
               <div class="common-form__wrapper common-form__wrapper--textarea">
                 <label class="visually-hidden" for="question">Ваш вопрос</label>
@@ -350,15 +350,15 @@
         <fieldset class="common-form__fieldset">
           <div class="common-form__wrapper">
             <label class="visually-hidden" for="name-modal">Имя</label>
-            <input id="name-modal" name="name-modal" type="text" placeholder="Имя">
+            <input id="name-modal" name="name-modal" type="text" placeholder="Имя" required="">
           </div>
           <div class="common-form__wrapper">
             <label class="visually-hidden" for="phone-modal">Телефон</label>
-            <input id="phone-modal" name="phone-modal" type="tel" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}">
+            <input id="phone-modal" name="phone-modal" type="tel" placeholder="Телефон" pattern="\+7\s?[\(][0-9]{3}[\)]{0,1}\s?\d{7}" required="">
           </div>
           <div class="common-form__wrapper common-form__wrapper--textarea">
             <label class="visually-hidden" for="question-modal">Ваш вопрос</label>
-            <textarea name="question-modal" id="question-modal" rows="7" placeholder="Ваш Вопрос"></textarea>
+            <textarea name="question-modal" id="question-modal" rows="7" placeholder="Ваш Вопрос" required=""></textarea>
           </div>
         </fieldset>
         <div class="common-form__sender">

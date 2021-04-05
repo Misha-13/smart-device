@@ -35,7 +35,7 @@
     width: 170px;
     margin: 0;
     position: absolute;
-    top: 53px;
+    top: 51px;
     left: 43px;
     z-index: 1;
     font-family: $extra-font;
@@ -80,6 +80,13 @@
 
     & img {
       opacity: 1;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    & h3 {
+      top: 49px;
+      left: 43px;
     }
   }
 

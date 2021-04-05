@@ -1,8 +1,5 @@
 .items-list {
   @include clear-lists-style;
-  /* display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: auto auto;
   width: 440px;
@@ -14,8 +11,6 @@
 }
 
 .items-list__element {
-  /* width: max-content; */
-
   &:nth-child(2n + 1) {
     margin-right: 65px;
   }

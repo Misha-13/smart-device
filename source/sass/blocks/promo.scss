@@ -13,7 +13,8 @@
     text-transform: uppercase;
     color: $layout-white;
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 28px;
+    margin-left: -3px;
   }
 
   & p {
@@ -26,7 +27,7 @@
     line-height: 34px;
     color: $layout-white;
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 40px;
 
     &::before {
       content: "";
@@ -69,7 +70,7 @@
     & p {
       font-size: 16px;
       line-height: 25px;
-      margin-bottom: 42px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -97,6 +98,9 @@
   text-decoration: none;
   background-color: $layout-blue;
   border-color: $layout-blue;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
   margin-bottom: 93px;
   margin-left: 93px;
 
@@ -197,7 +201,7 @@
     padding-top: 15px;
     padding-bottom: 140px;
     left: 10px;
-    top: -220px;
+    top: -215px;
 
     & img {
       max-width: 301px;

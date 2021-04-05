@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 231px;
+  margin-bottom: 233px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 116px;
@@ -11,5 +11,9 @@
 
   @media (max-width: $tablet-width-exception) {
     margin-bottom: 231px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 232px;
   }
 }

@@ -49,6 +49,10 @@
 
 .logo--footer {
   min-width: 216px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 5px;
+  }
 }
 
 .logo__text-wrapper--footer {
