@@ -24,7 +24,7 @@
   padding-right: 10px;
   padding-bottom: 13px;
 
-  & h2 {
+  h2 {
     margin: 0;
     margin-bottom: 25px;
     font-family: $extra-font;
@@ -34,7 +34,7 @@
     color: $layout-grey;
   }
 
-  & p {
+  p {
     font-family: $default-font;
     font-weight: 400;
     font-size: 16px;
@@ -49,7 +49,7 @@
     padding-right: 0;
     padding-bottom: 0;
 
-    & h2 {
+    h2 {
       font-size: 32px;
       line-height: 45px;
     }
@@ -60,13 +60,13 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    & h2 {
+    h2 {
       font-size: 28px;
       line-height: 39px;
       margin-bottom: 20px;
     }
 
-    & p {
+    p {
       margin-bottom: 40px;
     }
   }
@@ -75,7 +75,7 @@
 .about-us__flex-wrapper {
   margin-bottom: 40px;
 
-  & p {
+  p {
     display: block;
     margin-bottom: 0;
 
@@ -87,7 +87,7 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 43px;
 
-    & p {
+    p {
       display: none;
 
       &:last-child {
@@ -118,12 +118,12 @@
   min-height: 317px;
   margin-left: -30px;
 
-  & picture {
+  picture {
     width: 220px;
     height: 317px;
   }
 
-  & img {
+  img {
     width: 220px;
     height: 317px;
   }
@@ -133,12 +133,12 @@
     min-width: 251px;
     min-height: 362px;
 
-    & picture {
+    picture {
       min-width: 251px;
       min-height: 362px;
     }
 
-    & img {
+    img {
       min-width: 251px;
       min-height: 362px;
     }

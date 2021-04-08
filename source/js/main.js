@@ -4,10 +4,9 @@
   var body = document.querySelector('.page-body');
   var modalOpenButton = body.querySelector('.contact-info__button');
   var modalWindow = body.querySelector('.modal');
-  var closeModal = modalWindow.querySelector('.modal__close-button');
-  var moadlUserName = modalWindow.querySelector('#name-modal');
-  var moadlUserPhone = modalWindow.querySelector('#phone-modal');
-  var moadlUserQuestion = modalWindow.querySelector('#question-modal');
+  var modalUserName = document.querySelector('#name-modal');
+  var modalUserPhone = document.querySelector('#phone-modal');
+  var modalUserQuestion = document.querySelector('#question-modal');
 
   var setModalsClass = function (main, modal) {
     main.classList.toggle('page-body--modal');
@@ -15,25 +14,25 @@
   };
 
   var setStorageValue = function () {
-    localStorage.setItem('userName', moadlUserName.value);
-    localStorage.setItem('userPhone', moadlUserPhone.value);
-    localStorage.setItem('userQuestion', moadlUserQuestion.value);
+    localStorage.setItem('userName', modalUserName.value);
+    localStorage.setItem('userPhone', modalUserPhone.value);
+    localStorage.setItem('userQuestion', modalUserQuestion.value);
   };
 
   var getStorageValue = function () {
-    moadlUserName.value = localStorage.getItem('userName');
-    moadlUserPhone.value = localStorage.getItem('userPhone');
-    moadlUserQuestion.value = localStorage.getItem('userQuestion');
+    modalUserName.value = localStorage.getItem('userName');
+    modalUserPhone.value = localStorage.getItem('userPhone');
+    modalUserQuestion.value = localStorage.getItem('userQuestion');
   };
 
   var setEvent = function () {
+    var closeModal = modalWindow.querySelector('.modal__close-button');
     modalOpenButton.addEventListener('click', function (evt) {
       evt.preventDefault();
       setModalsClass(body, modalWindow);
       getStorageValue();
-      moadlUserName.focus();
+      modalUserName.focus();
     });
-
     closeModal.addEventListener('click', function () {
       setStorageValue();
       setModalsClass(body, modalWindow);
@@ -48,7 +47,9 @@
 
   window.modal = {
     setModal: function () {
-      setEvent();
+      if (modalOpenButton || modalWindow) {
+        setEvent();
+      }
     }
   };
 
@@ -97,8 +98,10 @@
 
   window.accordion = {
     setAccordion: function () {
-      setCommonSate();
-      setCommonEvents();
+      if (accordionMenu) {
+        setCommonSate();
+        setCommonEvents();
+      }
     }
   };
 
@@ -132,7 +135,9 @@
 
   window.phone = {
     setPhone: function () {
-      setPhoneEvents();
+      if (phoneInputs) {
+        setPhoneEvents();
+      }
     }
   };
 

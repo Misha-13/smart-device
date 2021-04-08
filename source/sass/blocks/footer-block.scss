@@ -3,7 +3,7 @@
   position: relative;
   flex-direction: column;
 
-  & h2 {
+  h2 {
     font-family: $extra-font;
     font-weight: 400;
     font-size: 15px;
@@ -15,7 +15,7 @@
     margin-bottom: 30px;
   }
 
-  & p {
+  p {
     margin: 0;
     font-family: $default-font;
     font-weight: 400;
@@ -34,7 +34,7 @@
   }
 }
 
-.footer-block--link {
+.footer-block__link {
   text-decoration: none;
   font-family: $default-font;
   font-weight: 400;

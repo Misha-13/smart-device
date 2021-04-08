@@ -34,7 +34,7 @@
   border-left: 3px solid $layout-blue;
   cursor: pointer;
 
-  & h3 {
+  h3 {
     font-family: $extra-font;
     font-weight: 400;
     font-size: 24px;
@@ -44,7 +44,7 @@
     margin-bottom: 15px;
   }
 
-  & p {
+  p {
     font-family: $default-font;
     font-weight: 400;
     font-size: 16px;
@@ -56,15 +56,15 @@
   &:hover {
     background-color: $layout-blue;
 
-    & h3 {
+    h3 {
       color: $layout-white;
     }
 
-    & p {
+    p {
       color: $layout-white;
     }
 
-    & .advantages-list__svg {
+    .advantages-list__svg {
       fill: $layout-white;
     }
   }
@@ -76,7 +76,7 @@
     padding-left: 24px;
     padding-right: 20px;
 
-    & h3 {
+    h3 {
       margin-top: 10px;
       margin-bottom: 5px;
     }
@@ -88,7 +88,7 @@
     padding-left: 25px;
     padding-right: 12px;
 
-    & h3 {
+    h3 {
       margin-top: 10px;
       font-size: 20px;
       line-height: 28px;

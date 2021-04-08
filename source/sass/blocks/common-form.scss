@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  & p {
+  p {
     margin: 0;
     margin-bottom: 50px;
     font-family: $default-font;
@@ -13,13 +13,13 @@
   }
 
   @media (max-width: $tablet-width) {
-    & p {
+    p {
       margin-bottom: 53px;
     }
   }
 
   @media (max-width: $mobile-width-only) {
-    & p {
+    p {
       margin-bottom: 25px;
     }
   }
@@ -34,7 +34,7 @@
   margin: 0;
   padding: 0;
 
-  & input {
+  input {
     box-sizing: border-box;
     width: 270px;
     border: none;
@@ -58,7 +58,7 @@
     }
   }
 
-  & textarea {
+  textarea {
     box-sizing: border-box;
     width: 100%;
     max-width: 570px;
@@ -84,7 +84,7 @@
     }
   }
 
-  & .common-form__wrapper {
+  .common-form__wrapper {
     margin-bottom: 38px;
 
     @media (max-width: $tablet-width) {
@@ -100,10 +100,10 @@
     }
   }
 
-  & .common-form__wrapper--textarea {
+  .common-form__wrapper--textarea {
     @media (max-width: $mobile-width-only) {
       margin-bottom: 22px;
-  }
+    }
   }
 }
 
@@ -175,7 +175,7 @@
 }
 
 .common-form__wrapper--checkbox {
-  & input {
+  input {
     display: none;
   }
 
@@ -196,34 +196,34 @@
 
 
 .common-form--modal {
-  & .common-form__fieldset {
+  .common-form__fieldset {
     flex-direction: column;
 
-    & input {
+    input {
       width: 100%;
     }
   }
 
-  & p {
+  p {
     width: 380px;
   }
 
-  & .common-form__button {
+  .common-form__button {
     width: 100%;
     margin-bottom: 35px;
   }
 
-  & .common-form__wrapper--checkbox {
+  .common-form__wrapper--checkbox {
     width: 100%;
   }
 
-  & .common-form__custom-box {
+  .common-form__custom-box {
     box-sizing: content-box;
     width: 330px;
     padding-left: 60px;
   }
 
-  & .common-form__sender {
+  .common-form__sender {
     flex-direction: column-reverse;
   }
 }
