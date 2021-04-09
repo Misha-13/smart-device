@@ -12,12 +12,21 @@
     background-image: url("../img/bg-main@2x.png");
   }
 
-  @media (max-width: $tablet-width) {
+  /* @media (max-width: $tablet-width) {
     padding-top: 54px;
     background-position: -645px -50px;
   }
 
   @media (max-width: $mobile-width-only) {
+    padding-top: 37px;
+    background-position: -975px 465px;
+  } */
+  @media (max-width: $desktop-width) {
+    padding-top: 54px;
+    background-position: -645px -50px;
+  }
+
+  @media (max-width: $tablet-width) {
     padding-top: 37px;
     background-position: -975px 465px;
   }

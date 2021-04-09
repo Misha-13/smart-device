@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="This site is for my own educational purposes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-ext-400.woff2" as="font" type="font/woff2">
@@ -89,7 +90,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="common-info">
-        <a class="logo">
+        <a class="logo" href="#">
           <img src="img/logo.svg" alt="Логотип Smart Device" width="52" height="52">
           <div class="logo__text-wrapper">
             <p>Smart Device</p>
@@ -120,11 +121,11 @@
         <div class="promo__info-wrapper">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="common-button promo__button" href="#">
+          <a class="common-button promo__button" href="#feedback">
             <span class="promo__text-element">Получить бесплатную консультацию</span>
             <span class="promo__text-element promo__text-element--mobile">Бесплатная консультация</span>
           </a>
-          <a class="promo__special-link" href="#">Скролл вниз</a>
+          <a class="promo__special-link" href="#advantages">Скролл вниз</a>
         </div>
         <div class="promo__img-wrapper">
           <!-- 1х: 705px; 2x: 1410px -->
@@ -137,7 +138,7 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages-list">
         <li class="advantages-list__element">
@@ -184,7 +185,7 @@
         <!-- 1х: 220px; 2x: 440px -->
         <picture>
           <source srcset="img/year@1x.webp 1x, img/year@2x.webp 2x" type="image/webp">
-          <img src="img/year@1x.png" srcset="img/year@2x.png 2x" alt="Изображение 2005 года" width="220" height="317">
+          <img src="img/year@1x.png" srcset="img/year@2x.png 2x" loading="lazy" alt="Изображение 2005 года" width="220" height="317">
         </picture>
       </div>
     </section>
@@ -198,7 +199,7 @@
               <!-- 1х: 370px; 2x: 740px -->
               <picture>
                 <source srcset="img/chip-production@1x.webp 1x, img/chip-production@2x.webp 2x" type="image/webp">
-                <img src="img/chip-production@1x.png" srcset="img/chip-production@2x.png 2x" alt="Изображение сборки платы" width="370" height="620">
+                <img src="img/chip-production@1x.png" srcset="img/chip-production@2x.png 2x" loading="lazy" alt="Изображение сборки платы" width="370" height="620">
               </picture>
             </a>
           </li>
@@ -208,7 +209,7 @@
               <!-- 1х: 220px; 2x: 440px -->
               <picture>
                 <source srcset="img/chip-install@1x.webp 1x, img/chip-install@2x.webp 2x" type="image/webp">
-                <img src="img/chip-install@1x.png" srcset="img/chip-install@2x.png 2x" alt="Изображение монтажа платы" width="220" height="317">
+                <img src="img/chip-install@1x.png" srcset="img/chip-install@2x.png 2x" loading="lazy" alt="Изображение монтажа платы" width="220" height="317">
               </picture>
             </a>
           </li>
@@ -218,14 +219,14 @@
               <!-- 1х: 220px; 2x: 440px -->
               <picture>
                 <source srcset="img/led@1x.webp 1x, img/led@2x.webp 2x" type="image/webp">
-                <img src="img/led@1x.png" srcset="img/led@2x.png 2x" alt="Изображение светотехники" width="220" height="317">
+                <img src="img/led@1x.png" srcset="img/led@2x.png 2x" loading="lazy" alt="Изображение светотехники" width="220" height="317">
               </picture>
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="feedback__wrapper">
         <div class="feedback__form-wrapper">
           <h2>Остались вопросы? Задайте их нам!</h2>
@@ -268,7 +269,7 @@
     <div class="page-footer__wrapper">
       <section class="socials">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <a class="logo logo--footer">
+        <a class="logo logo--footer" href="#">
           <img src="img/logo.svg" alt="Логотип Smart Device" width="52" height="52">
           <div class="logo__text-wrapper logo__text-wrapper--footer">
             <p>Service Device</p>
@@ -286,12 +287,12 @@
           </a>
           <a class="socials__link" href="#">
             <svg width="27" height="27">
-              <use xlink:href="#icon-vk"></use>
+              <use xlink:href="#icon-ok"></use>
             </svg>
           </a>
           <a class="socials__link" href="#">
             <svg width="27" height="27">
-              <use xlink:href="#icon-ok"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </div>
