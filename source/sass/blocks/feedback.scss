@@ -4,7 +4,7 @@
   width: 100%;
   background-color: $layout-blue;
   padding-top: 93px;
-  padding-bottom: 80px;
+  padding-bottom: 105px;
   background-image: url("../img/feedback-bg@1x.png");
   background-repeat: no-repeat;
   background-position: 1556px 35px;
@@ -79,7 +79,7 @@
   margin-left: 15px;
   margin-right: 15px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     justify-content: center;
   }
 }
@@ -108,7 +108,7 @@
 .feedback__img-wrapper {
   position: absolute;
   top: 0;
-  right: 570px;
+  right: 553px;
   padding-top: 69px;
   padding-bottom: 225px;
   padding-left: 144px;

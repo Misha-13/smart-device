@@ -1,7 +1,8 @@
 .contact-info {
   box-sizing: border-box;
   display: flex;
-  flex-basis: 678px;
+  /* flex-basis: 678px; */
+  flex-basis: 658px;
   justify-content: space-between;
   align-items: center;
 
@@ -123,7 +124,8 @@
 }
 
 .contact-info__button {
-  width: 180px;
+  /* width: 180px; */
+  width: 163px;
   box-sizing: border-box;
   text-decoration: none;
   padding-top: 14px;
