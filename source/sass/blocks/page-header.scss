@@ -10,16 +10,6 @@
   background-size: cover;
   overflow: hidden;
 
-  /* @media (max-width: $tablet-width) {
-    padding-bottom: 159px;
-    padding-top: 20px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    padding-bottom: 69px;
-    padding-top: 16px;
-  } */
-
   @media (max-width: $desktop-width) {
     padding-bottom: 159px;
     padding-top: 20px;
@@ -39,23 +29,10 @@
 }
 
 .page-header__wrapper {
-  /* width: 1411px; */
-  width: 1395px;
+  width: 1411px;
   margin-right: 15px;
   margin-left: 15px;
 
-  /* @media (max-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin-left: 15px;
-    margin-right: 15px;
-  } */
   @media (max-width: $desktop-width) {
     display: flex;
     flex-direction: column;

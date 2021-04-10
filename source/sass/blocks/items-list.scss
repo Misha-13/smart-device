@@ -1,15 +1,12 @@
 .items-list {
   @include clear-lists-style;
   display: grid;
-  /* grid-template-columns: auto auto; */
+  grid-auto-flow: column;
   grid-template-columns: max-content max-content;
-  /* width: 440px; */
+  grid-template-rows: auto auto auto auto;
 
-  /* @media (max-width: $tablet-width) {
-    grid-template-columns: max-content;
-    width: auto;
-  } */
   @media (max-width: $desktop-width) {
+    grid-auto-flow: initial;
     grid-template-columns: max-content;
     width: auto;
   }
@@ -17,14 +14,9 @@
 
 .items-list__element {
   &:nth-child(2n + 1) {
-    margin-right: 65px;
+    margin-right: 70px;
   }
 
-  /* @media (max-width: $tablet-width) {
-    &:nth-child(2n + 1) {
-      margin-right: 0;
-    }
-  } */
   @media (max-width: $desktop-width) {
     &:nth-child(2n + 1) {
       margin-right: 0;

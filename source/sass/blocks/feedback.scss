@@ -4,7 +4,7 @@
   width: 100%;
   background-color: $layout-blue;
   padding-top: 93px;
-  padding-bottom: 105px;
+  padding-bottom: 108px;
   background-image: url("../img/feedback-bg@1x.png");
   background-repeat: no-repeat;
   background-position: 1556px 35px;
@@ -24,18 +24,6 @@
     color: $layout-white;
   }
 
-  /* @media (max-width: $tablet-width) {
-    background-image: none;
-    padding-top: 83px;
-    padding-bottom: 103px;
-
-    h2 {
-      font-size: 32px;
-      line-height: 45px;
-      margin-bottom: 11px;
-    }
-  } */
-
   @media (max-width: $desktop-width) {
     background-image: none;
     padding-top: 83px;
@@ -48,15 +36,6 @@
     }
   }
 
-  /* @media (max-width: $mobile-width-only) {
-    padding-top: 30px;
-    padding-bottom: 41px;
-
-    h2 {
-      font-size: 28px;
-      line-height: 39px;
-    }
-  } */
   @media (max-width: $tablet-width) {
     padding-top: 30px;
     padding-bottom: 41px;
@@ -73,9 +52,7 @@
   display: flex;
   flex-basis: 1170px;
   flex-direction: row-reverse;
-  /* justify-content: center; */
   justify-content: flex-start;
-  /* flex-wrap: wrap; */
   margin-left: 15px;
   margin-right: 15px;
 
@@ -91,24 +68,23 @@
   flex-basis: 570px;
   justify-self: flex-start;
 
-  /* @media (max-width: $tablet-width) {
-    max-width: 590px;
-    flex-basis: 590px;
-    margin-left: 25px;
-    margin-right: 25px;
-  } */
   @media (max-width: $desktop-width) {
     max-width: 590px;
     flex-basis: 590px;
     margin-left: 25px;
     margin-right: 25px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .feedback__img-wrapper {
   position: absolute;
   top: 0;
-  right: 553px;
+  right: 563px;
   padding-top: 69px;
   padding-bottom: 225px;
   padding-left: 144px;
@@ -123,9 +99,6 @@
     background-size: 671px 641px;
   }
 
-  /* @media (max-width: $tablet-width) {
-    display: none;
-  } */
   @media (max-width: $desktop-width) {
     display: none;
   }

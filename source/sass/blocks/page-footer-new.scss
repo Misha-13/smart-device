@@ -1,0 +1,29 @@
+.page-footer-new {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  outline: 2px solid red;
+}
+
+.page-footer-new__wrapper {
+  outline: 2px solid gold;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.socials-new {
+  outline: 2px solid blue;
+}
+
+.page-footer-new__blocks-wrapper {
+  outline: 2px solid green;
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+.footer-block-new__link {
+  display: block;
+}

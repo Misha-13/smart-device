@@ -6,29 +6,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
-  /* @media (max-width: $tablet-width) {
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: $tablet-width-grid-exception) {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  } */
   @media (max-width: $desktop-width) {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
   }
-
-  /* @media (max-width: $tablet-width-grid-exception) {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  } */
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
@@ -83,31 +64,6 @@
     }
   }
 
-  /* @media (max-width: $tablet-width) {
-    min-height: auto;
-    height: auto;
-    padding: 22px;
-    padding-left: 24px;
-    padding-right: 20px;
-
-    h3 {
-      margin-top: 10px;
-      margin-bottom: 5px;
-    }
-  }
-
-  @media (max-width: $mobile-width-only) {
-    min-height: 232px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 12px;
-
-    h3 {
-      margin-top: 10px;
-      font-size: 20px;
-      line-height: 28px;
-    }
-  } */
   @media (max-width: $desktop-width) {
     min-height: auto;
     height: auto;
@@ -136,12 +92,6 @@
 }
 
 .advantages-list__element--exept {
-  /* @media (max-width: $mobile-width-only) {
-    min-height: 232px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 7px;
-  } */
   @media (max-width: $tablet-width) {
     min-height: 232px;
     padding-bottom: 25px;
@@ -155,10 +105,6 @@
   width: 35px;
   height: 35px;
 
-  /* @media (max-width: $tablet-width) {
-    width: 32px;
-    height: 32px;
-  } */
   @media (max-width: $desktop-width) {
     width: 32px;
     height: 32px;
@@ -170,10 +116,6 @@
   width: 29px;
   height: 35px;
 
-  /* @media (max-width: $tablet-width) {
-    width: 29px;
-    height: 36px;
-  } */
   @media (max-width: $desktop-width) {
     width: 29px;
     height: 36px;
@@ -184,10 +126,6 @@
   width: 36px;
   height: 31px;
 
-  /* @media (max-width: $tablet-width) {
-    width: 30px;
-    height: 26px;
-  } */
   @media (max-width: $desktop-width) {
     width: 30px;
     height: 26px;

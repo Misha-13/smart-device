@@ -1,22 +1,10 @@
 .advantages {
   display: flex;
   max-width: 1170px;
-  /* margin-left: 15px; */
-  margin-left: 25px;
+  margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 105px;
 
-  /* @media (max-width: $tablet-width) {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 60px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 63px;
-  } */
   @media (max-width: $desktop-width) {
     margin-left: 25px;
     margin-right: 25px;

@@ -5,15 +5,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 
-  /* @media (max-width: $tablet-width) {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 256px;
-    gap: 46px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    gap: 30px;
-  } */
   @media (max-width: $desktop-width) {
     grid-template-columns: 1fr;
     grid-auto-rows: 256px;
@@ -29,10 +20,6 @@
   min-height: 620px;
   box-sizing: border-box;
 
-  /* @media (max-width: $tablet-width) {
-    min-height: auto;
-    overflow: hidden;
-  } */
   @media (max-width: $desktop-width) {
     min-height: auto;
     overflow: hidden;
@@ -96,19 +83,6 @@
     }
   }
 
-  /* @media (max-width: $tablet-width) {
-    h3 {
-      top: 49px;
-      left: 43px;
-    }
-  }
-
-  @media (max-width: $mobile-width-only) {
-    h3 {
-      top: 23px;
-      left: 35px;
-    }
-  } */
   @media (max-width: $desktop-width) {
     h3 {
       top: 49px;
@@ -125,40 +99,16 @@
 }
 
 .goods-list__link--product {
-  /* @media (max-width: $tablet-width) {
-    img {
-      width: 804px;
-      height: 300px;
-      max-width: none;
-      object-fit: cover;
-      object-position: -40px -140px;
-    }
-  }
-
-  @media (max-width: $mobile-width-only) {
-    img {
-      object-fit: cover;
-      width: 326px;
-      height: 300px;
-      object-position: -80px -20px;
-    }
-  } */
   @media (max-width: $desktop-width) {
     img {
-      /* width: 804px;
-      height: 300px; */
       max-width: none;
       object-fit: cover;
-      /* object-position: -40px -140px; */
     }
   }
 
   @media (max-width: $tablet-width) {
     img {
       object-fit: cover;
-      /* width: 326px;
-      height: 300px; */
-      object-position: -80px -20px;
     }
   }
 
@@ -171,24 +121,6 @@
 }
 
 .goods-list__link--install {
-  /* @media (max-width: $tablet-width) {
-    img {
-      width: 1970px;
-      height: 279px;
-      max-width: none;
-      object-fit: cover;
-      object-position: -630px -520px;
-    }
-  }
-
-  @media (max-width: $mobile-width-only) {
-    img {
-      object-fit: cover;
-      width: 793px;
-      height: 279px;
-      object-position: -250px -135px;
-    }
-  } */
   @media (max-width: $desktop-width) {
     img {
       width: 1970px;
@@ -202,8 +134,6 @@
   @media (max-width: $tablet-width) {
     img {
       object-fit: cover;
-      /* width: 793px;
-      height: 279px; */
       object-position: -250px -135px;
     }
   }
@@ -217,24 +147,6 @@
 }
 
 .goods-list__link--led {
-  /* @media (max-width: $tablet-width) {
-    & img {
-      width: 1207px;
-      height: 256px;
-      max-width: none;
-      object-fit: cover;
-      object-position: -240px -480px;
-    }
-  }
-
-  @media (max-width: $mobile-width-only) {
-    img {
-      object-fit: cover;
-      width: 486px;
-      height: 256px;
-      object-position: -100px -120px;
-    }
-  } */
   @media (max-width: $desktop-width) {
     & img {
       width: 1207px;
@@ -248,8 +160,6 @@
   @media (max-width: $tablet-width) {
     img {
       object-fit: cover;
-      /* width: 486px;
-      height: 256px; */
       object-position: -100px -120px;
     }
   }

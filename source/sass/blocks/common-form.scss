@@ -187,15 +187,12 @@
     border: 1px solid $layout-white;
   }
 
-  /* @media (max-width: $tablet-width) {
-    width: 240px;
-  } */
   @media (max-width: $desktop-width) {
     width: 240px;
   }
 
   @media (max-width: $tablet-width) {
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -214,13 +211,6 @@
     opacity: 0.7;
   }
 
-  /* @media (max-width: $tablet-width) {
-    width: 280px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: 30px;
-  } */
   @media (max-width: $desktop-width) {
     width: 280px;
   }

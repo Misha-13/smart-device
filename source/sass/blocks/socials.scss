@@ -3,29 +3,7 @@
   grid-template-columns: 1fr;
   grid-auto-rows: min-content;
   gap: 55px;
-  /* margin-right: 206px; */
 
-  /* @media (max-width: $tablet-width) {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 25px;
-    padding-right: 5px;
-    padding-bottom: 25px;
-    margin-bottom: 38px;
-    justify-self: stretch;
-    border-bottom: 1px solid rgba($layout-darker-grey, 0.2);
-    gap: 10px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    justify-content: center;
-    padding-bottom: 45px;
-    margin-bottom: 0;
-    gap: 25px;
-  } */
   @media (max-width: $desktop-width) {
     width: 100%;
     display: flex;
@@ -42,10 +20,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    /* justify-content: center; */
     width: auto;
     flex-direction: column;
-    /* align-items: center; */
     padding-right: 25px;
     padding-bottom: 45px;
     margin-bottom: 0;
@@ -55,6 +31,10 @@
 
 .socials__links {
   display: flex;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 10px;
+  }
 }
 
 .socials__link {
@@ -95,13 +75,6 @@
     color: rgba($color: $layout-light-black, $alpha: 0.5);
   }
 
-  /* @media (max-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: 7px;
-  } */
   @media (max-width: $desktop-width) {
     display: block;
   }
