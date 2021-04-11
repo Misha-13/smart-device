@@ -56,7 +56,7 @@
 })();
 
 (function () {
-  var MOBILE_WIDTH = 320;
+  var MOBILE_WIDTH = 767;
   var accordionMenu = document.querySelectorAll('.footer-block');
 
   var setDefaultAccordion = function () {
