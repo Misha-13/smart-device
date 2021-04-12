@@ -22,16 +22,20 @@
   background-color: $layout-blue;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 140px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  /* margin-top: 140px; */
+  margin-top: 136px;
+  /* padding-top: 35px; */
+  padding-top: 31px;
+  /* padding-bottom: 35px; */
+  padding-bottom: 0;
   padding-left: 40px;
   padding-right: 40px;
   z-index: 101;
 
   h2 {
     margin: 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 13px;
     font-family: $extra-font;
     font-weight: 400;
     font-size: 28px;
