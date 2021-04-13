@@ -71,9 +71,29 @@
     accordionMenu.forEach(function (element) {
       var accordionButton = element.querySelector('.footer-block__button');
       accordionButton.classList.add('footer-block__button--show');
-      accordionButton.addEventListener('click', function () {
+      accordionButton.addEventListener('click', function (evt) {
+        var openedFlag = evt.target.classList.contains('footer-block__button--show');
+        evt.preventDefault();
+        var openedBlock = document.querySelectorAll('.footer-block');
+        openedBlock.forEach(function (e) {
+          if (!e.classList.contains('footer-block--hidde')) {
+            e.classList.add('footer-block--hidde');
+          }
+        });
+
+        var openedButton = document.querySelectorAll('.footer-block__button');
+        openedButton.forEach(function (e) {
+          if (!e.classList.contains('footer-block__button--show')) {
+            e.classList.add('footer-block__button--show');
+          }
+        });
+
         accordionButton.classList.toggle('footer-block__button--show');
         element.classList.toggle('footer-block--hidde');
+        if (!openedFlag) {
+          accordionButton.classList.add('footer-block__button--show');
+          element.classList.add('footer-block--hidde');
+        }
       });
     });
 
@@ -117,6 +137,14 @@
           element.value = '+7(';
         }
       });
+
+      element.addEventListener('keyup', function () {
+        var str = element.value;
+        if (str.length <= 2) {
+          element.value = '+7(';
+        }
+      });
+
       element.addEventListener('keypress', function (evt) {
         var str = element.value;
         if (parseInt(evt.key, 10)) {

@@ -9,34 +9,20 @@
     grid-auto-flow: initial;
   }
 
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-between;
-  height: 100px;
-  width: max-content; */
-
   @media (max-width: $desktop-width) {
     grid-auto-flow: initial;
     grid-template-columns: max-content;
     width: auto;
+  }
 
-    /* height: auto;
-    flex-wrap: nowrap; */
+  @media (max-width: $tablet-width) {
+    padding-right: 25px;
+    padding-left: 15px;
   }
 }
 
 .items-list__element {
   margin-right: 70px;
-  /* &:nth-child(2n + 1) {
-    margin-right: 70px;
-  }
-
-  @media (max-width: $desktop-width) {
-    &:nth-child(2n + 1) {
-      margin-right: 0;
-    }
-  } */
 }
 
 .items-list__link {

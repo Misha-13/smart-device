@@ -20,7 +20,7 @@
 
   @media (max-width: $tablet-width) {
     p {
-      margin-bottom: 25px;
+      margin-bottom: 27px;
     }
   }
 }
@@ -38,12 +38,17 @@
     box-sizing: border-box;
     width: 270px;
     border: none;
+    border-radius: 0%;
     background-color: rgba($color: $layout-white, $alpha: 0.1);
     padding-top: 14px;
     padding-bottom: 18px;
     padding-right: 16px;
     padding-left: 16px;
     color: $layout-white;
+
+    &:hover {
+      outline: 2px solid $layout-black;
+    }
 
     &::placeholder {
       font-family: $default-font;
@@ -66,7 +71,7 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 570px;
-    /* resize: vertical; */
+    border-radius: 0%;
     resize: none;
     border: none;
     background-color: rgba($color: $layout-white, $alpha: 0.1);
@@ -75,6 +80,10 @@
     padding-right: 16px;
     padding-left: 16px;
     color: $layout-white;
+
+    &:hover {
+      outline: 2px solid $layout-black;
+    }
 
     &::placeholder {
       font-family: $default-font;
@@ -161,6 +170,11 @@
 
   @media (max-width: $tablet-width) {
     width: auto;
+    padding-left: 35px;
+
+    &::before {
+      left: 0;
+    }
   }
 }
 
@@ -184,14 +198,15 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     width: 100%;
   }
 }
 
 .common-form__wrapper--checkbox {
   input {
-    display: none;
+    position: absolute;
+    z-index: -100;
   }
 
   input:checked ~ .common-form__custom-box {
@@ -205,6 +220,12 @@
       border-bottom: 1px solid $layout-white;
       border-right: 1px solid $layout-white;
       transform: rotate(45deg);
+    }
+
+    @media (max-width: $tablet-width) {
+      &::after {
+        left: 5px;
+      }
     }
   }
 }
@@ -241,7 +262,6 @@
 
   .common-form__button {
     width: 100%;
-    /* margin-bottom: 35px; */
     margin-bottom: 30px;
   }
 
@@ -258,7 +278,6 @@
   .common-form__custom-box {
     box-sizing: content-box;
     width: 330px;
-    /* padding-left: 60px; */
     padding-left: 50px;
 
     &::before {
