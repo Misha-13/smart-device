@@ -4,6 +4,7 @@
   align-items: center;
   min-width: 202px;
   text-decoration: none;
+  height: 52px;
 
   @media (max-width: $desktop-width) {
     margin-right: 5px;
@@ -11,6 +12,7 @@
 
   @media (max-width: $tablet-width) {
     min-width: 38px;
+    height: 38px;
   }
 
   img {
@@ -78,4 +80,10 @@
   @media (max-width: $tablet-width) {
     display: block;
   }
+}
+
+.logo--modal {
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
